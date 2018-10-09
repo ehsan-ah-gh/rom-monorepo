@@ -1,10 +1,12 @@
 {
-  "name": "@lerna-monorepo/shop",
-  "description": "Lerna monorepo finisher",
-  "version": "1.0.2",
-  "author": "Andrico Karoulla <karoulla.andrico@gmail.com>",
+  "name": "@lerna-monorepo/platform",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.11.3"
+  },
   "dependencies": {
-    "@lerna-monorepo/shared-ui": "^1.0.1",
+    "@lerna-monorepo/shared-ui": "^1.0.0",
     "dotenv": "^6.0.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -15,28 +17,17 @@
     "gatsby-react-router-scroll": "^1.0.18",
     "react": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "serve":"^10.0.0",
+    "serve": "^10.0.0",
     "styled-components": "^3.3.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "start": "serve public",
     "build": "gatsby build",
-    "develop": "gatsby develop -p 8001",
+    "dev": "gatsby develop -p 8001",
     "format": "prettier --write 'src/**/*.js'",
     "test": "jest test --config ../../jest-config.json"
   },
   "devDependencies": {
     "prettier": "^1.12.0"
-  },
-  "engines": {
-    "node": "10.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }

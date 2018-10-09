@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
       <ItemCardWrapper>
         {edges && edges.map(edge => <ItemCard key={edge.node.id} data={edge.node} slug="post" />)}
       </ItemCardWrapper>
-      <a href={`http://${process.env.SHOP_URL}`}>Go to Shop</a>
+      <a href={`http://${process.env.PLATFORM_URL}`}>Go to Platform</a>
     </div>
   )
 }

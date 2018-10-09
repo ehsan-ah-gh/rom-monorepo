@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
       <ItemCardWrapper>
         {edges && edges.map(edge => <ItemCard key={edge.node.id} data={edge.node} slug="item" />)}
       </ItemCardWrapper>
-      <a href={`http://${process.env.BLOG_URL}`}>Go to Blog</a>
+      <a href={`http://${process.env.WEBSITE_URL}`}>Go to Website</a>
     </div>
   )
 }

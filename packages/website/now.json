@@ -1,8 +1,7 @@
 {
   "type": "static",
-  "alias": "lerna-monorepo-shop",
+  "alias": "rom-website.now.sh",
   "static": {
     "public": "public"
-  },
-  "public": true
+  }
 }

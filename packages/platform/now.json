@@ -1,8 +1,7 @@
 {
   "type": "static",
-  "alias": "lerna-monorepo-blog",
+  "alias": "rom-platform.now.sh",
   "static": {
     "public": "public"
-  },
-  "public": true
+  }
 }

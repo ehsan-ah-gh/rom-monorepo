@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10.9.0"
+  - '8.11.3'
 
 cache: yarn
 
@@ -10,10 +10,10 @@ install:
 
 matrix:
   include:
-  - name: Blog Pipeline
-    env: PACKAGE_LOCATION=packages/blog PACKAGE_NAME=lerna-monorepo-blog
-  - name: Shop Pipeline
-    env: PACKAGE_LOCATION=packages/shop PACKAGE_NAME=lerna-monorepo-shop
+    - name: Platform Pipeline
+      env: PACKAGE_LOCATION=packages/platform PACKAGE_NAME=platform
+    - name: Website Pipeline
+      env: PACKAGE_LOCATION=packages/website PACKAGE_NAME=website
 
 script:
   - cd $PACKAGE_LOCATION

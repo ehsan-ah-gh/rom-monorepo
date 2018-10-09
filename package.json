@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "engines": {
-    "node": "10.9.0"
+    "node": "8.x.x"
   },
   "workspaces": [
     "packages/*"
@@ -22,9 +22,9 @@
     "react-router-dom": "^4.3.1"
   },
   "scripts": {
-    "run:blog": "cd packages/blog && yarn develop",
-    "run:shop": "cd packages/shop && yarn develop",
-    "run:all": "npm-run-all --parallel run:blog run:shop",
+    "dev:website": "cd packages/website && yarn dev",
+    "dev:platform": "cd packages/platform && yarn dev",
+    "dev:all": "npm-run-all --parallel dev:website dev:platform",
     "test": "jest test"
   }
 }
